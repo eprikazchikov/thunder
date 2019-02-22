@@ -6,7 +6,7 @@
 class Mesh;
 class MaterialInstance;
 
-class NEXT_LIBRARY_EXPORT PointLight : public BaseLight {
+class ENGINE_EXPORT PointLight : public BaseLight {
     A_REGISTER(PointLight, BaseLight, Components)
 
     A_PROPERTIES(

@@ -24,7 +24,7 @@
 #include <string>
 #include <list>
 
-#include <global.h>
+#include "engine_export.h"
 
 using namespace std;
 
@@ -32,7 +32,7 @@ typedef void            _FILE;
 typedef	uint64_t        _size_t;
 typedef list<string>    StringList;
 
-class NEXT_LIBRARY_EXPORT IFile {
+class ENGINE_EXPORT IFile {
 public:
     void                finit           (const char *argv0);
     void                fsearchPathAdd  (const char *path, bool isFirst = false);

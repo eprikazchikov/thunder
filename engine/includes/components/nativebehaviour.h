@@ -3,7 +3,7 @@
 
 #include "component.h"
 
-class NEXT_LIBRARY_EXPORT NativeBehaviour : public Component {
+class ENGINE_EXPORT NativeBehaviour : public Component {
     A_REGISTER(NativeBehaviour, Component, Components)
 
     A_NOPROPERTIES()

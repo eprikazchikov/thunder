@@ -7,7 +7,7 @@
 
 class Node;
 
-class NEXT_LIBRARY_EXPORT Texture : public Object {
+class ENGINE_EXPORT Texture : public Object {
     A_REGISTER(Texture, Object, Resources)
 
 public:

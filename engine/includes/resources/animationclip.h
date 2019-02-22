@@ -2,8 +2,9 @@
 #define ANIMATIONCLIP_H
 
 #include "variantanimation.h"
+#include "engine_export.h"
 
-class NEXT_LIBRARY_EXPORT AnimationClip : public Object {
+class ENGINE_EXPORT AnimationClip : public Object {
     A_REGISTER(AnimationClip, Object, Resources)
 
 public:

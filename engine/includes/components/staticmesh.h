@@ -3,7 +3,7 @@
 
 #include "basemesh.h"
 
-class NEXT_LIBRARY_EXPORT StaticMesh : public BaseMesh {
+class ENGINE_EXPORT StaticMesh : public BaseMesh {
     A_REGISTER(StaticMesh, BaseMesh, Components)
 
     A_PROPERTIES (

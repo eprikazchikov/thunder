@@ -8,7 +8,7 @@
 class Mesh;
 class MaterialInstance;
 
-class NEXT_LIBRARY_EXPORT TextMesh : public BaseMesh {
+class ENGINE_EXPORT TextMesh : public BaseMesh {
     A_REGISTER(TextMesh, BaseMesh, Components)
 
     A_PROPERTIES(

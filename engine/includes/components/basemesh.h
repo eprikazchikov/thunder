@@ -8,7 +8,7 @@
 
 #include <array>
 
-class NEXT_LIBRARY_EXPORT BaseMesh : public NativeBehaviour {
+class ENGINE_EXPORT BaseMesh : public NativeBehaviour {
     A_REGISTER(BaseMesh, NativeBehaviour, General);
 
     A_METHODS(

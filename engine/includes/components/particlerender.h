@@ -6,7 +6,7 @@
 class ParticleRenderPrivate;
 class ParticleEffect;
 
-class NEXT_LIBRARY_EXPORT ParticleRender : public NativeBehaviour {
+class ENGINE_EXPORT ParticleRender : public NativeBehaviour {
     A_REGISTER(ParticleRender, NativeBehaviour, Components)
 
     A_PROPERTIES(

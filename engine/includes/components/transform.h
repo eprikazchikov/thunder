@@ -3,7 +3,7 @@
 
 #include "component.h"
 
-class NEXT_LIBRARY_EXPORT Transform : public Component {
+class ENGINE_EXPORT Transform : public Component {
     A_REGISTER(Transform, Component, Components)
 
     A_PROPERTIES(

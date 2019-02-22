@@ -6,7 +6,7 @@
 class PropertyAnimation;
 class AnimationClip;
 
-class NEXT_LIBRARY_EXPORT AnimationController : public NativeBehaviour {
+class ENGINE_EXPORT AnimationController : public NativeBehaviour {
     A_REGISTER(AnimationController, NativeBehaviour, Components)
 
     A_PROPERTIES (

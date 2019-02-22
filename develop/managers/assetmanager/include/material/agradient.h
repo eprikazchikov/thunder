@@ -6,7 +6,6 @@
 #define X       "X"
 #define Y       "Y"
 #define A       "A"
-#define OUT     "Out"
 #define EDGE1   "Edge1"
 #define EDGE2   "Edge2"
 
@@ -14,6 +13,7 @@ class ASmothCurve : public AObject, public IShaderFunction {
     ACLASS(ASmothCurve)
     AREGISTER(ASmothCurve, Material/Gradient)
 
+    static constexpr const char *OUT ="Out";
 public:
     ASmothCurve() {
         APROPERTY(float,    OUT,      "", 1.0f, AProperty::READ | AProperty::SCHEME,   -1);

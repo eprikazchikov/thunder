@@ -1,13 +1,13 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
+#include "engine_export.h"
+
 #include <cstdint>
 #include <string>
 #include <map>
 
-#include "object.h"
 #include <objectsystem.h>
-
 #include <file.h>
 
 class IModule;
@@ -17,7 +17,7 @@ class EnginePrivate;
 class Actor;
 class Scene;
 
-class NEXT_LIBRARY_EXPORT Engine : public ObjectSystem {
+class ENGINE_EXPORT Engine : public ObjectSystem {
 public:
     Engine                      (IFile *file, int argc, char **argv);
     ~Engine                     ();

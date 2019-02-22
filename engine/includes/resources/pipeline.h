@@ -20,7 +20,7 @@ class MaterialInstance;
 class RenderTexture;
 class PostProcessor;
 
-class NEXT_LIBRARY_EXPORT Pipeline : public Object {
+class ENGINE_EXPORT Pipeline : public Object {
     A_REGISTER(Pipeline, Object, Resources)
 
 public:

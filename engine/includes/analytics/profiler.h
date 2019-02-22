@@ -21,7 +21,7 @@
     #define PROFILER_RESET(x)
 #endif
 
-class NEXT_LIBRARY_EXPORT Profiler {
+class ENGINE_EXPORT Profiler {
 public:
     struct CallPoint {
         const char             *name;

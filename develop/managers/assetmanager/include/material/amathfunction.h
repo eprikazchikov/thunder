@@ -3,8 +3,6 @@
 
 #include "../shaderbuilder.h"
 
-#define A       "A"
-#define B       "B"
 #define MINV    "Min"
 #define MAXV    "Max"
 
@@ -13,6 +11,9 @@ class MathFunction : public ShaderFunction {
     Q_CLASSINFO("Group", "Math")
 
 public:
+    static constexpr const char *A = "A";
+    static constexpr const char *B = "B";
+
     AbstractSchemeModel::Node *createNode(ShaderBuilder *model, const QString &path) {
         AbstractSchemeModel::Node *result   = ShaderFunction::createNode(model, path);
         int i   = 0;

@@ -14,7 +14,7 @@ class IConverter;
 #endif
 
 
-class NEXT_LIBRARY_EXPORT IModule {
+class ENGINE_EXPORT IModule {
 public:
     enum PluginTypes {
         SYSTEM                      = (1<<0),

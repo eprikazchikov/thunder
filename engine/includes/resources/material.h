@@ -6,7 +6,7 @@
 
 class Material;
 
-class NEXT_LIBRARY_EXPORT MaterialInstance {
+class ENGINE_EXPORT MaterialInstance {
 public:
     struct Info {
         uint32_t                type;
@@ -46,7 +46,7 @@ protected:
     InfoMap                     m_Info;
 };
 
-class NEXT_LIBRARY_EXPORT Material : public Object {
+class ENGINE_EXPORT Material : public Object {
     A_REGISTER(Material, Object, Resources)
 
 public:

@@ -11,7 +11,7 @@ class Mesh;
 class ParticleModificator;
 typedef deque<ParticleModificator *> ModifiersDeque;
 
-class NEXT_LIBRARY_EXPORT ParticleEffect : public Object {
+class ENGINE_EXPORT ParticleEffect : public Object {
     A_REGISTER(ParticleEffect, Object, Resources)
 public:
     enum ModificatorType {

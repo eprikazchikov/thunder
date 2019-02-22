@@ -3,7 +3,7 @@
 
 #include "engine.h"
 
-class NEXT_LIBRARY_EXPORT Utils {
+class ENGINE_EXPORT Utils {
 public:
     static string       wstringToUtf8           (const wstring &in);
 

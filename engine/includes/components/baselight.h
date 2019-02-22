@@ -8,7 +8,7 @@
 class Mesh;
 class MaterialInstance;
 
-class NEXT_LIBRARY_EXPORT BaseLight : public NativeBehaviour {
+class ENGINE_EXPORT BaseLight : public NativeBehaviour {
     A_REGISTER(BaseLight, NativeBehaviour, Components)
 
     A_PROPERTIES(

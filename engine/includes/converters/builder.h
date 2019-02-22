@@ -1,5 +1,5 @@
-#ifndef BUILDER_H
-#define BUILDER_H
+#ifndef IBUILDER_H
+#define IBUILDER_H
 
 #include "converter.h"
 #include "resources/text.h"
@@ -10,7 +10,7 @@ class ProjectManager;
 
 typedef QMap<QString, QString>      StringMap;
 
-class NEXT_LIBRARY_EXPORT IBuilder : public IConverter {
+class ENGINE_EXPORT IBuilder : public IConverter {
     Q_OBJECT
 public:
     IBuilder                        ();

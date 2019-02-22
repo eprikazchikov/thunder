@@ -4,9 +4,6 @@
 #include <QDirIterator>
 #include <QDebug>
 
-#include <quazip.h>
-#include <quazipfile.h>
-
 class Builder : public QObject {
     Q_OBJECT
 public:

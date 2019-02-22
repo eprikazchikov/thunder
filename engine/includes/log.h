@@ -9,7 +9,7 @@ class ILogHandler;
 
 class LogPrivate;
 
-class NEXT_LIBRARY_EXPORT Log {
+class ENGINE_EXPORT Log {
 public:
     enum LogTypes {
         ERR             = 0,

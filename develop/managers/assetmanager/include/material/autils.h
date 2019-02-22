@@ -3,7 +3,6 @@
 
 #include <components/material.h>
 
-#define IN  "In"
 #define X   "X"
 #define Y   "Y"
 #define Z   "Z"
@@ -11,6 +10,8 @@
 
 class VectorRutine : public IMaterialObjectGL {
 public:
+    static constexpr const char *IN = "In";
+
     void breakVector(AObject &object, string &value, const AObject::link_data &link, uint32_t &depth, uint8_t &size) {
         size    = AVariant::FLOAT;
 

@@ -3,18 +3,16 @@
 #include "resources/mesh.h"
 #include "file.h"
 #include "log.h"
+#include "converters/converter.h"
+#include "projectmanager.h"
 
+#include <fbxsdk.h>
 #include <bson.h>
 
-#if __linux__
 #include <cstring>
-#endif
 
 #include <QFileInfo>
 #include <QTime>
-
-#include "converters/converter.h"
-#include "projectmanager.h"
 
 #define HEADER  "Header"
 #define DATA    "Data"

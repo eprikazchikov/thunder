@@ -1,11 +1,11 @@
 #include "adapters/desktopadaptor.h"
-#if(_MSC_VER)
+#if(_WIN32)
     #include <windows.h>
     #include <Shlobj.h>
 #elif __APPLE__
     #include <CoreFoundation/CoreFoundation.h>
 #endif
-#if(__GNUC__)
+#if(__GNUC__ && !defined(_WIN32))
     #include <dlfcn.h>
 #endif
 #include <GLFW/glfw3.h>
@@ -14,6 +14,7 @@
 #include <file.h>
 #include <utils.h>
 
+#include <algorithm>
 #include <mutex>
 #include <string.h>
 
@@ -194,7 +195,7 @@ Vector2 DesktopAdaptor::joystickTriggers(uint8_t index) {
 }
 
 void *DesktopAdaptor::pluginLoad(const char *name) {
-#if(_MSC_VER)
+#if(_WIN32)
     return (void*)LoadLibrary((LPCWSTR)name);
 #elif(__GNUC__)
     return dlopen(name, RTLD_NOW);
@@ -202,7 +203,7 @@ void *DesktopAdaptor::pluginLoad(const char *name) {
 }
 
 bool DesktopAdaptor::pluginUnload(void *plugin) {
-#if(_MSC_VER)
+#if(_WIN32)
     return FreeLibrary((HINSTANCE)plugin);
 #elif(__GNUC__)
     return dlclose(plugin);
@@ -210,7 +211,7 @@ bool DesktopAdaptor::pluginUnload(void *plugin) {
 }
 
 void *DesktopAdaptor::pluginAddress(void *plugin, const string &name) {
-#if(_MSC_VER)
+#if(_WIN32)
     return (void*)GetProcAddress((HINSTANCE)plugin, name.c_str());
 #elif(__GNUC__)
     return dlsym(plugin, name.c_str());

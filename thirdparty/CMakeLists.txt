@@ -1,0 +1,12 @@
+add_subdirectory(angelscript)
+add_subdirectory(next)
+add_subdirectory(freetype)
+add_subdirectory(fbx)
+add_subdirectory(glad)
+add_subdirectory(glfw)
+add_subdirectory(glsl)
+add_subdirectory(spirvcross)
+add_subdirectory(zlib)
+add_subdirectory(quazip)
+
+add_subdirectory(physfs)

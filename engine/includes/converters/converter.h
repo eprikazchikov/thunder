@@ -5,7 +5,7 @@
 
 #include <engine.h>
 
-class NEXT_LIBRARY_EXPORT IConverterSettings {
+class ENGINE_EXPORT IConverterSettings {
 public:
     IConverterSettings              ();
     virtual ~IConverterSettings     () {}
@@ -49,7 +49,7 @@ protected:
     vector<string>          mSubItems;
 };
 
-class NEXT_LIBRARY_EXPORT IConverter : public QObject {
+class ENGINE_EXPORT IConverter : public QObject {
 public:
     enum ContentTypes {
         ContentInvalid              = MetaType::USERTYPE,

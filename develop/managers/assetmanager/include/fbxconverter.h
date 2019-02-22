@@ -1,7 +1,11 @@
 #ifndef FBXCONVERTER_H
 #define FBXCONVERTER_H
 
-#include <fbxsdk.h>
+namespace fbxsdk
+{
+    class FbxNode;
+    class FbxScene;
+}
 
 #include "converters/converter.h"
 
@@ -30,8 +34,8 @@ public:
 
 protected:
     void                        importFBX               (const string &src, Mesh &mesh);
-    void                        importDynamic           (FbxNode *lRootNode, Mesh &mesh);
-    void                        importAFAnimation       (FbxScene *lScene);
+    void                        importDynamic           (fbxsdk::FbxNode *lRootNode, Mesh &mesh);
+    void                        importAFAnimation       (fbxsdk::FbxScene *lScene);
 
     void                        saveAnimation           (const string &dst);
 

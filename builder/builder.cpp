@@ -3,6 +3,9 @@
 #include "log.h"
 #include "projectmanager.h"
 
+#include <quazip.h>
+#include <quazipfile.h>
+
 #include <QCoreApplication>
 
 Builder::Builder() {

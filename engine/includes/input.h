@@ -7,7 +7,7 @@
 
 class IPlatformAdaptor;
 
-class NEXT_LIBRARY_EXPORT Input {
+class ENGINE_EXPORT Input {
 public:
     enum MouseButton {
         LEFT                = 0x01,

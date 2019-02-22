@@ -12,7 +12,7 @@
 #include "engine.h"
 #include "material.h"
 
-class NEXT_LIBRARY_EXPORT Mesh : public Object {
+class ENGINE_EXPORT Mesh : public Object {
     A_REGISTER(Mesh, Object, Resources)
 
 public:

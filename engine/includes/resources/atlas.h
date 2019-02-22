@@ -4,7 +4,7 @@
 #include "engine.h"
 #include "texture.h"
 
-class NEXT_LIBRARY_EXPORT Atlas : public Object {
+class ENGINE_EXPORT Atlas : public Object {
     A_REGISTER(Atlas, Object, Resources)
 
 public:

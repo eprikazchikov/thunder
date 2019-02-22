@@ -6,7 +6,7 @@
 class Actor;
 class ICommandBuffer;
 
-class NEXT_LIBRARY_EXPORT Component : public Object {
+class ENGINE_EXPORT Component : public Object {
     A_REGISTER(Component, Object, General)
 
     A_PROPERTIES (

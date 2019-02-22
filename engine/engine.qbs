@@ -48,7 +48,7 @@ Project {
         Depends { name: "Qt"; submodules: ["core", "gui"]; }
         bundle.isBundle: false
 
-        cpp.defines: ["NEXT_SHARED", "NEXT_LIBRARY"]
+        cpp.defines: ["NEXT_SHARED", "NEXT_LIBRARY", "engine_editor_EXPORTS"]
         cpp.includePaths: engine.incPaths
         cpp.libraryPaths: [ ]
         cpp.dynamicLibraries: [ ]
@@ -94,7 +94,7 @@ Project {
         cpp.minimumIosVersion: "10.0"
         cpp.minimumTvosVersion: "10.0"
         cpp.cxxStandardLibrary: "libc++"
-        cpp.defines: ["NEXT_LIBRARY"]
+        cpp.defines: ["NEXT_LIBRARY", "ENGINE_STATIC_DEFINE"]
 
         Properties {
             condition: engine.desktop

@@ -12,7 +12,7 @@ class MaterialInstance;
 
 typedef vector<RenderTexture *> TargetBuffer;
 
-class NEXT_LIBRARY_EXPORT ICommandBuffer: public Object {
+class ENGINE_EXPORT ICommandBuffer: public Object {
     A_REGISTER(ICommandBuffer, Object, System)
 
 public:

@@ -7,7 +7,7 @@
 
 class Pipeline;
 
-class NEXT_LIBRARY_EXPORT Camera : public Component {
+class ENGINE_EXPORT Camera : public Component {
     A_REGISTER(Camera, Component, Components)
 
     A_PROPERTIES(

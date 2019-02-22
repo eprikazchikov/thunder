@@ -6,7 +6,7 @@
 
 class FT_FaceRec_;
 
-class NEXT_LIBRARY_EXPORT Font : public Atlas {
+class ENGINE_EXPORT Font : public Atlas {
     A_REGISTER(Font, Atlas, Resources)
 
 public:

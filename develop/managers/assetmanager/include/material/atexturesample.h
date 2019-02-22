@@ -6,16 +6,17 @@
 #include "assetmanager.h"
 
 #define UV      "UV"
-#define R       "R"
-#define G       "G"
-#define B       "B"
-#define A       "A"
 
 class TextureFunction : public ShaderFunction {
     Q_OBJECT
     Q_CLASSINFO("Group", "Texture")
 
 public:
+    static constexpr const char *R = "R";
+    static constexpr const char *G = "G";
+    static constexpr const char *B = "B";
+    static constexpr const char *A = "A";
+
     Q_INVOKABLE TextureFunction() { }
 
     virtual AbstractSchemeModel::Node  *createNode  (ShaderBuilder *model, const QString &path) {

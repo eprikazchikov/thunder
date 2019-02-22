@@ -3,7 +3,7 @@
 
 #include "engine.h"
 
-class NEXT_LIBRARY_EXPORT Text : public Object {
+class ENGINE_EXPORT Text : public Object {
     A_REGISTER(Text, Object, Resources)
 
 public:
